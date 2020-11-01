@@ -1,1 +1,5 @@
-<!-- Create your form here -->
+<%= form_for @student, method: :post do |f| %>
+    First Name: <%= f.text_field :first_name %> <br>
+    Last Name: <%= f.text_field :last_name %><br>
+    <%= f.submit %>
+    <% end %>
